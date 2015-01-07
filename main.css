@@ -75,6 +75,15 @@
   color: #00b0ff;
 }
 
+.thumbnail {
+	background-color: #efefef;
+	border-color: #efefef;
+}
+
+#me {
+	border-radius: 200%;
+}
+
 #checkbuttons {
 	padding-bottom: 40px;
 }
