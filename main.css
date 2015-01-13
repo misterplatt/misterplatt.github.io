@@ -41,6 +41,12 @@
 	margin-bottom: -15px;
 }
 
+.main-text h3 {
+	color: #000;
+	font-family: 'Shift', sans-serif;
+	text-shadow: #000 0 0 5px;
+}
+
 .neighborhood-guides {
     background-color: #efefef;
     border-bottom : 1px solid #dbdbdb;
@@ -82,10 +88,24 @@
 
 #me {
 	border-radius: 200%;
+	border-width: 2px;
+	border-color: #000;
+}
+
+#title{
+	padding: 20px;
+}
+
+#gametext p{
+	font-family: 'Shift', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+
 }
 
 #checkbuttons {
-	padding-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 #footer {
