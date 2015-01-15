@@ -14,6 +14,10 @@
   display: inline;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+
 .jumbotron p {
   font-size: 20px;
   color: #000;
@@ -55,6 +59,8 @@
 .neighborhood-guides h2 {
     color: #393c3d;
     font-size:24px;
+	font-weight: bold;
+	padding-left: 95px;
 }
 
 .neighborhood-guides p {
@@ -111,7 +117,7 @@ canvas {
 }
 
 #checkbuttons {
-	padding-top: 20px;
+	padding-top: 0px;
 	padding-bottom: 20px;
 }
 
