@@ -1,6 +1,5 @@
 .nav {
   padding-top: 5px;
-  padding-bottom: -5px;
   background-color: #7e27d5;
   border-bottom: 4px solid #232024;
 }
@@ -19,8 +18,9 @@
   display: inline;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu{
     display: block;
+	margin: 0;
  }
 
 .jumbotron p {
