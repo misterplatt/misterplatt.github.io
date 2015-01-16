@@ -1,5 +1,6 @@
 .nav {
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: -5px;
   background-color: #7e27d5;
   border-bottom: 4px solid #232024;
 }
@@ -8,7 +9,10 @@
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  padding: 14px 10px;
+}
+
+.pull-left a {
+	font-size: 30px;
 }
 
 .nav li {
@@ -62,6 +66,12 @@
     font-size:24px;
 	font-weight: bold;
 	padding-left: 95px;
+}
+
+.neighborhood-guides h3 {
+    color: #393c3d;
+    font-size:24px;
+	font-weight: bold;
 }
 
 .neighborhood-guides p {
