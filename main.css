@@ -1,21 +1,32 @@
 .nav {
-  padding-top: 5px;
-  background-color: #7e27d5;
-  border-bottom: 4px solid #232024;
+  background-color: #404040;
+  border-bottom: 4px solid #7e27d5;
+  height: 61px;
 }
 
 .nav a {
+  padding-top: 5px;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
+  text-shadow: #fff 0 0 .5px;
 }
 
-.pull-left a {
-	font-size: 30px;
+#init {
+	padding-top:1px;
+}
+
+#init a {
+	font-size: 35px;
 }
 
 .nav li {
   display: inline;
+}
+
+#social {
+	padding-left:10px;
+	padding-right:10px;
 }
 
 .dropdown:hover .dropdown-menu{
@@ -23,14 +34,9 @@
 	margin: 0;
  }
 
-.jumbotron p {
-  font-size: 20px;
-  color: #000;
-}
-
 .carousel img{
-  width: 100%;
-  height: 400px;
+	width: 100%;
+	height: 400px;
 }
 
 .main-text {
