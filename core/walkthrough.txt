@@ -1,0 +1,173 @@
+======ENDING 1: SAVE THE SHIP=====
+
+Core Decisions
+An Interactive Fiction by Sean Mendenhall and Hayden Platt
+Release 1 / Serial number 150605 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+
+Sleeping Quarters
+Four bland grey walls surround you, periodically glowing red with the siren's light.
+
+You can see a holoscreen here.
+
+>e
+
+Mess Hall
+As you enter, you're quickly trapped in the flow of people heading for escape pods in the engeering bay. Half-eaten meal trays scatter the hall.
+
+You can see a gas mask here.
+
+Your watch tech beeps loudly, and displays a message: ***WARNING: 60 minutes remain. Please evacuate immediately.***
+
+"Looks like I should be able to keep track of how much time I have left with this. I'd better hurry!"
+
+>s
+
+Bridge
+The central hub of the ship, you notice almost everyone is rushing hand over foot towards the Engineering Bay.
+
+You can see the Captain directing people towards the escape pods whilst standing atop one of the control panels.
+
+You can also see a Captain's Door here.
+
+>s
+
+Engineering Bay
+The engineering bay is buzzing with people shoving and shouting, trying to get into the remaining escape pods. The Engine Room door is to the west.
+
+You can see a Reactor Door, a crowbar, an escape pod (empty) and an access panel (empty) here.
+
+>take crowbar
+Taken.
+
+>n
+
+Bridge
+The central hub of the ship, you notice almost everyone is rushing hand over foot towards the Engineering Bay.
+
+You can see the Captain directing people towards the escape pods whilst standing atop one of the control panels.
+
+You can also see a Captain's Door here.
+
+>pry door
+You pry away the fallen debris with all your might.
+
+>w
+(first opening the Captain's Door)
+
+Captain's Quarters
+Rubble covers the room, nearly every piece of furniture is demolished.
+
+You spot a keycard lying in the rubble of the desk.
+
+You can also see a Captain's Door here.
+
+>take keycard
+Taken.
+
+>e
+
+Bridge
+The central hub of the ship, you notice almost everyone is rushing hand over foot towards the Engineering Bay.
+
+You can see the Captain directing people towards the escape pods whilst standing atop one of the control panels.
+
+You can also see a Captain's Door here.
+
+>e
+
+Hangar
+The flood of people continue through the Hangar, hurriedly making for the escape pods.
+
+You can see a scout ship, a transport ship, an attack ship, a window and an engine cover (closed) here.
+
+>pry cover
+You pry open the attack ship's engine cover, revealing a fusion reactor core.
+
+Your watch tech beeps loudly, and displays a message: ***WARNING: 50 minutes remain. Please evacuate immediately.***
+>take core
+Taken.
+
+>w
+
+Bridge
+The central hub of the ship, you notice almost everyone is rushing hand over foot towards the Engineering Bay.
+
+You can see the Captain directing people towards the escape pods whilst standing atop one of the control panels.
+
+You can also see a Captain's Door here.
+
+>s
+
+Engineering Bay
+The engineering bay is buzzing with people shoving and shouting, trying to get into the remaining escape pods. The Engine Room door is to the west.
+
+You can see a Reactor Door, an escape pod (empty) and an access panel (empty) here.
+
+>insert keycard into panel
+Inserting the keycard into the access panel unlocks the reactor room
+You put the keycard into the access panel.
+
+>w
+(first opening the Reactor Door)
+
+Reactor Room
+Quick, before you die!
+
+You can see a Reactor Door and an overheated fusion reactor here.
+
+>replace core
+You replace the overheated fusion core with the new one!
+
+
+
+    *** You did it, the ship is saved! ***
+
+======ENDING 2: ESCAPE THE SHIP============
+
+Core Decisions
+An Interactive Fiction by Sean Mendenhall and Hayden Platt
+Release 1 / Serial number 150605 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+
+Sleeping Quarters
+Four bland grey walls surround you, periodically glowing red with the siren's light.
+
+You can see a holoscreen here.
+
+>e
+
+Mess Hall
+As you enter, you're quickly trapped in the flow of people heading for escape pods in the engeering bay. Half-eaten meal trays scatter the hall.
+
+You can see a gas mask here.
+
+Your watch tech beeps loudly, and displays a message: ***WARNING: 60 minutes remain. Please evacuate immediately.***
+
+"Looks like I should be able to keep track of how much time I have left with this. I'd better hurry!"
+
+>s
+
+Bridge
+The central hub of the ship, you notice almost everyone is rushing hand over foot towards the Engineering Bay.
+
+You can see the Captain directing people towards the escape pods whilst standing atop one of the control panels.
+
+You can also see a Captain's Door here.
+
+>s
+
+Engineering Bay
+The engineering bay is buzzing with people shoving and shouting, trying to get into the remaining escape pods. The Engine Room door is to the west.
+
+You can see a Reactor Door, a crowbar, an escape pod (empty) and an access panel (empty) here.
+
+>enter escape pod
+You get into the escape pod.
+
+
+
+    *** You blast away from the ship, leaving several of your comrades to die. ***
+
+======ENDING 3: TOTAL FAILURE=============
+
+Wait 61 turns until your watch timer reaches zero and the ship implodes.
+
