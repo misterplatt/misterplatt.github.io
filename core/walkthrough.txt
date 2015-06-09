@@ -282,5 +282,5 @@ You raise your XS-10 Laser Pistol, steady your breath, aim, and fire. A red lase
 
 ======ENDING 4: TOTAL FAILURE=============
 
-Wait 61 turns until your watch timer reaches zero and the ship implodes.
+Wait 60 turns until your watch timer reaches zero and the ship implodes.
 
