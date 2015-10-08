@@ -1,6 +1,6 @@
 .nav {
   background-color: #404040;
-  border-bottom: 4px solid #7e27d5;
+  border-bottom: 4px solid #673AB7;
   height: 61px;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .dropdown:hover .dropdown-menu{
-    display: block;
+   display: block;
 	margin: 0;
  }
 

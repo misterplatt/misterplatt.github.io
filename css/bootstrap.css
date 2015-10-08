@@ -6339,7 +6339,7 @@ button.close {
 .btn-custom:focus,
 .btn-custom:active,
 .btn-custom.active {
-  background-color: #7e27d5;
+  background-color: #673AB7;
   border-color: #7123bf;
   color: #fff;
 }
