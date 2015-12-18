@@ -177,7 +177,7 @@ BRUSHED.fancyBox = function(){
 					}
 				},
 				helpers : {
-					title : { type: 'inside' },
+					title : { type: 'inside' }
 				}
 			});
 			
@@ -185,7 +185,6 @@ BRUSHED.fancyBox = function(){
 			openEffect  : 'none',
 			closeEffect : 'none',
 			helpers : {
-				
 				media : {}
 			}
 		});
