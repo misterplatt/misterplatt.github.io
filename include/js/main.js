@@ -77,11 +77,11 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/hypetrain_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/krab_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/incognitowl_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/dreamlock_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/meow_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''}  											
+											{image : 'include/img/slider-images/hypetrain_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/krab_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/incognitowl_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/dreamlock_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/meow_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''}  											
 									],
 									
 		// Theme Options			   
@@ -204,7 +204,7 @@ BRUSHED.contactForm = function(){
 		
 		$.ajax({
 			type: "POST",
-			url: "_include/php/contact.php",
+			url: "include/php/contact.php",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
@@ -231,7 +231,7 @@ BRUSHED.tweetFeed = function(){
 	var valueTop = -64; // Margin Top Value
 	
     $("#ticker").tweet({
-          modpath: '_include/js/twitter/',
+          modpath: 'include/js/twitter/',
           username: "Bluxart", // Change this with YOUR ID
           page: 1,
           avatar_size: 0,
@@ -414,7 +414,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: '_include/js/placeholder.js', 
+		nope: 'include/js/placeholder.js', 
 		complete : function() {
 				if (!Modernizr.placeholder) {
 						Placeholders.init({
