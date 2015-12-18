@@ -34,7 +34,7 @@ body{
 
 
 a{
-	color:#673AB7;
+	color:#8561c5;
 	text-decoration: none;
 	cursor: pointer;
 	
@@ -553,7 +553,7 @@ nav#menu #menu-nav li a {
 
 nav#menu #menu-nav li.current a,
 nav#menu #menu-nav li a:hover {
-	color: #673AB7;
+	color: #8561c5;
 }
 
 
@@ -692,7 +692,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .work-nav #filters li a.selected {
-	color: #673AB7;
+	color: #8561c5;
 }
 
 #thumbs {
