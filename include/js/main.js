@@ -189,7 +189,10 @@ BRUSHED.fancyBox = function(){
 					this.title = $(this.element).attr('title');
 					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
 					// Add download button
-					if($(this.element).parent().find('img').attr('dlink') != null){
+					if($(this.element).parent().find('img').attr('dlink') == http://haydenplatt.me/incognitowl_game/browser){
+						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Play In Browser</a>';
+					}
+					else {
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Download</a>';
 					}
 			},
