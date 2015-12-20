@@ -171,8 +171,8 @@ BRUSHED.fancyBox = function(){
 					if($(this.element).parent().find('img').attr('dlink') != null){
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Download</a>';
 					}
+					//Add itch iframe
 					if($(this.element).parent().find('img').attr('itch') != null){
-						
 						this.title += '<br>' + '<iframe src="https://itch.io/embed/39925?dark=true&amp;linkback=true" width="552" height="167" frameborder="0"></iframe>';
 					}
 				},
@@ -184,7 +184,13 @@ BRUSHED.fancyBox = function(){
 		$('.fancybox-media').fancybox({
 			openEffect  : 'none',
 			closeEffect : 'none',
+			padding : 0,
+			beforeShow: function () {
+					this.title = $(this.element).attr('title');
+					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+			},
 			helpers : {
+				title : { type: 'inside' },
 				media : {}
 			}
 		});
