@@ -1,0 +1,262 @@
+"Core Decisions" by Sean Mendenhall and Hayden Platt
+
+Release along with cover art, the source text, an interpreter, and a website.
+
+The story description is "The fusion core is reaching critical temperature! With only 60 minutes to destruction, will you take the easy way out or risk it all?"
+
+When play begins:
+say "[italic type]You awake in your cramped sleeping quarters to the wail of emergency sirens.[line break]".
+
+[Watch]
+MinutesLeft is a number variable. MinutesLeft is 61.
+Oxygen is a number variable. Oxygen is 1000.
+
+A watch tech is worn. 
+
+Check examining:
+	if the noun is watch:
+		say "You glance down at your watch, noting that only [MinutesLeft] minutes remain. Better hurry...";
+		now MinutesLeft is MinutesLeft + 1;
+
+Every turn:
+	now MinutesLeft is MinutesLeft - 1;
+	[say “DEBUG: Minutes Remaining: [MinutesLeft]”;]
+	if MinutesLeft is 0:
+		say "[bold type]A computerized voice blares over the loudspeaker: 'Reactor core implosion imminent. Brace for explosion in 3…2...'[line break][line break]You clench your fists tightly, as a single boom and a flurry of flame engulfs you.";
+		end the story saying “[bold type]All of the sudden, your vision quickly fades to black. You awake to find yourself laying down on a cushioned surface and suddenly feel a virtual reality helmet being pulled off your head. The bright lights blind you for a second, as your eyes adjust you make out a few men and women encircling the bed you are laying on. They are all wearing various military uniforms, you notice most of them are generals or other high ranking officers. One of the four star generals stares down at your seriously, 'You ran out of time Cadet. In emergency situations, time is of the essence. Make better use of yours.”;
+	if the remainder after dividing the MinutesLeft by 10 is 0:
+		say “[italic type]Your watch tech beeps loudly, and displays a message: [bold type]***WARNING: [MinutesLeft] minutes remain. Please evacuate immediately.***[roman type]”;
+	if MinutesLeft is 60:
+		say "[line break][line break]'Looks like I should be able to keep track of how much time I have left with this. I'd better hurry!'";
+	now Oxygen is Oxygen - 1;
+	[say “DEBUG: Oxygen Remaining: [Oxygen]”;]
+	if Oxygen is less than 5:
+		say “[italic type]Your watch tech beeps loudly, and displays a message: [bold type]***WARNING: [Oxygen] minutes of lifeforce remain. Please get to safety immediately.***[roman type]”;
+	if Oxygen is 0:
+		say "[bold type]As the toxins get the best of your body, you feel your heartbeat slow as your ears start to ring... so close...";
+		end the story saying “[bold type]All of the sudden, your vision quickly fades to black. You awake to find yourself laying down on a cushioned surface and suddenly feel a virtual reality helmet being pulled off your head. The bright lights blind you for a second, as your eyes adjust you make out a few men and women encircling the bed you are laying on. They are all wearing various military uniforms, you notice most of them are generals or other high ranking officers. One of the four star generals pats you on the shoulder, 'Good attempt Cadet, but you should have heeded the DANGER sign on the door. You almost had it, maybe next time you can find something to protect you from those fumes! This will conclude your Captain's Exam round this year, you will not be advancing. I wish you the best next year.'”;
+
+[Actions]
+[Customizing Inserting]
+
+After inserting something into the fusion chamber:
+	if the noun is fusion reactor core:
+		say “You replace the overheated fusion core with the new one!”;
+		say “[bold type]You did it, the ship is saved! Fortunately, the Captain was able to get the door back open for you, and you emerge to a crowd of cheers coming from those whose lives you just saved!”;
+		end the story saying “[bold type]All of the sudden, your vision quickly fades to black. You awake to find yourself laying down on a cushioned surface and suddenly feel a virtual reality helmet being pulled off your head. The bright lights blind you for a second, as your eyes adjust you make out a few men and women encircling the bed you are laying on. They are all wearing various military uniforms, you notice most of them are generals or other high ranking officers. One of the four star generals places a hand on your shoulder and gives it a gentle squeeze as he smiles down at you, 'Great job Cadet, you handled that emergency simulation like a true Captain! You’ll be advancing to the next phase of the exam.'”;
+
+Before inserting something into the access panel: 
+	if noun is not keycard:
+		say "‘Insert what?";
+		stop the action;
+	
+After inserting something into the access panel: 
+		say "You slip the card into the machine. It lights up green as the reactor door opens!";
+		now the Reactor Door is unlocked;
+		
+Check inserting:
+	if the player is in the engineering bay:
+		continue the action;
+	if the player is in the reactor room:
+		continue the action;
+	else:
+		say "Inserting is not available in this area";
+		stop the action;
+
+[Customising Examining]
+Understand "tap [something]" as examining.
+Understand "touch [something]" as examining.
+
+[Selecting]
+Selecting is an action applying to a number.
+
+Understand "select [number]" as selecting.
+
+Understand "[number]" as selecting.
+
+Understand "type [number]" as selecting.
+
+Understand "input [number]" as selecting.
+
+Carry out selecting a number: 
+	if the player's command includes "1":
+		say "[line break][bold type]‘The Fusion reactor for the engines is overheating and you are the only engineer left, the others have already evacuated.";
+	otherwise if the player's command includes "2":
+		say "[line break][bold type]'This is your Captain, I have begun to evacuate all personnel but believe there is still a chance the ship can be saved! We must speak in person as soon as possible, find me in the Bridge!'";
+	else:
+		say "Selection not available. Please press 1 for evacuation proctol, or press 2 for a message from the Captain.";
+
+Before selecting:
+	if the player is not in the sleeping quarters:
+		say "Nothing to select here.";
+		stop the action;
+
+[Prying]
+Prying is an action applying to one visible thing.
+
+Understand "pry [something]" as prying.
+
+Understand "lift [something]" as prying.
+
+Understand "leverage [something]" as prying.
+
+Understand "jimmy [something]" as prying.
+
+Before prying:
+	if the player does not have the crowbar:
+		say "You have nothing to pry with!";
+		stop the action;
+
+Carry out prying:
+	if the noun is the engine cover:
+		say "You pry open the attack ship's engine cover, revealing a fusion reactor core. It's obviously less powerful than the broken one, but maybe it will tide us over for a landing?";
+		now the engine cover is open;
+		stop the action;
+	if the noun is the Captain’s Door:
+		say "You stick the crowbar into the crack in the door, and use some good ol' mechanical advantage to pry it open just enough for you to fit through!";
+		now the Captain’s Door is unlocked;
+		now the player is in the Captain's Quarters;
+		stop the action;
+	else:
+		say "You can't pry that!";
+		stop the action;
+
+[Shooting]
+Shooting is an action applying to one visible thing.
+
+Understand "shoot [something]" as shooting.
+
+Understand "kill [something]" as shooting.
+
+Understand "execute [something]" as shooting.
+
+Before shooting:
+	if the player does not have the pistol:
+		say “You have nothing to shoot with.”;
+		stop the action;
+
+Carry out shooting:
+	if the noun is the captain:
+		say "[bold type]You raise your XS-10 Laser Pistol, steady your breath, aim, and fire. A red laser beam streaks across the room and strikes the captain in her back. The captain falls to the floor amid the mass of people screaming and thrashing to get away from the blood. As they form a circle around her body you take her spot atop the crate and they’re gaze shifts upward, 'I am the captain now!'";
+		end the story saying "[bold type]All of the sudden, your vision fades to black. You awake to find yourself laying down on a cushioned surface and suddenly feel a virtual reality helmet being pulled off your head. The bright lights blind you for a second, as your eyes adjust you make out a few men and women encircling the bed you are laying on. They are all wearing various military uniforms, you notice most of them are generals or other high ranking officers. One of the four star generals stares down at you with a blank expression, 'You shot the captain?! What part of Emergency Situation Response Simulation do you not understand?! Cadet, I am going have to recommend you be released from the Academy and be processed for a psychiatric evaluation.'”;
+		stop the action;
+	else:
+		say "You can't shoot that.";
+		stop the action;
+
+[Pounding]
+Pounding is an action applying to one visible thing.
+
+Understand “push [something]” as pounding.
+
+Understand “press [something]” as pounding.
+
+Understand “activate [something]” as pounding.
+
+Understand “pound [something]” as pounding.
+
+Before pounding:
+	if the player is not in the escape pod:
+		say “Nothing to pound here.”;
+		stop the action;
+
+Carry out pounding:
+	if the noun is eject button:
+		say “[bold type]You strap yourself into the escape pod, stare down and press the eject button. With a sudden burst you blast away from the ship. As you look back you spot the panicked faces of your comrades you just left to die.”;
+		end the story saying “[bold type]All of the sudden, your vision fades to black. You awake to find yourself laying down on a cushioned surface and suddenly feel a virtual reality helmet being pulled off your head. The bright lights blind you for a second, as your eyes adjust you make out a few men and women encircling the bed you are laying on. They are all wearing various military uniforms, you notice most of them are generals or other high ranking officers. One of the four star generals glares down at you and sarcastically remarks, 'Great Job Cadet, you abandoned your crew and ship! Those virtual lives were dependent on you repairing the ship, but you chose the easy way out! In my report I will have to recommend you be reprimanded for your actions during this simulation. You will be going no further in this year’s Captain’s Exam.'”;
+		stop the action;
+	otherwise:
+		say “You can’t pound that.”;
+		stop the action;
+
+[Establish Map]
+[Sleeping Quarters]
+The Sleeping Quarters is a room. The description is “[italic type]Four bland grey walls surround you, periodically glowing red with the siren's light. The mess hall is east of here.[roman type]”
+
+The holoscreen is here. The holoscreen is fixed in place. The description is “You tap on your holoscreen, projecting a hologram avatar who steps into view. [line break][line break][bold type]'Greetings, ENGINEER. Emergency in progress. Press 1 for evacuation proctol. Press 2 for a message from the Captain.’[roman type]”			
+
+[Mess Hall]
+The Mess Hall is east of the Sleeping Quarters and north of the Bridge. The Mess hall is a room. “[italic type]As you enter, you're quickly trapped in the flow of people heading for escape pods in the engineering bay. Half-eaten meal trays scatter the hall. To the south is the bridge and to the west is the sleeping quarters.[roman type]”
+
+[TO DO: Make the gas mask only appear after visiting the engineer bay]
+The gas mask is an object. The gas mask is in the Mess Hall. The gas mask is wearable. The description is  “A hi-tech gas mask sits alone in the wake of the evacuation.”
+
+[Bridge]
+The Bridge is east of the Captain’s Door, west of the Hangar, and north of the Engineering Bay. The Bridge is a room. “[italic type]The central hub of the ship, you notice almost everyone is rushing hand over foot towards the Engineering Bay. The Captain’s Quarters are to the west, the Hanger is to the east, Engineering Bay is to the south, and the Mess Hall is north.[roman type]”
+
+The captain is here. The captain is a person. "You can see the Captain directing people towards the escape pods whilst standing atop one of the control panels."
+
+Instead of examining the captain:
+	say "'THIS WAY NOW EVERYONE, HOP TO!' you hear her shout. After a few excuse me[apostrophe]s, you manage to get her attention.[line break][line break]'If you wanna run, follow the crowd. Otherwise I can tell you about the PROBLEM at hand, or the  possibility for REPAIR.[line break][line break][italic type]talk to the captain with: ask captain about {topic}"
+
+Instead of asking the captain about something:
+	if the player's command includes "problem":
+		say "‘Fusion core is fucked.'";
+	otherwise if the player's command includes "repair":
+		say "'It[apostrophe]d be quite a task. You[apostrophe]d have to find some sort of replacement core on the ship, then get access to the room which houses the core. Unfortunately, my keycard which provides access to the room is trapped behind the debris blocking off my quarters. Find a way in there, along with a replacement, and you just might be able to save the ship. It[apostrophe]s a long shot though.'";
+	else:
+		say "I'm not sure what you're asking.";
+
+
+[Captain’s Quarters]
+The Captain’s Quarters is a room. “[italic type]Much bigger than your quarters. Guess that's one of the perks of being the Captain. The Bridge is to the west.[roman type]”
+
+The Captain's Door is west of the Bridge and east of the Captain’s Quarters. The Captain's Door is a locked door. The description is “Rubble blocks the way to the Captain's Quarters."
+
+Before opening Captain's Door:
+	if Captain's Door is locked:
+		say "The door's electronics seem to have failed, but it's open just a crack. Maybe you can pry it open somehow?";
+		stop the action;
+
+The pile of clothes is here. The pile of clothes is an open container. "A mess of clothes scatters the room."
+
+Instead of examining the clothes:
+	say "In the midst of the disaster, you decide to rifle through the Captain's dirty laundry. Much to your surprise, you find an XS-10 Laser Pistol lying amongst them.";
+
+The pistol is in the pile of clothes.
+
+The keycard is here. "You spot a keycard lying on the corner of the desk."
+
+[Hangar]
+The Hangar is a room. The description is “[italic type]Ohhhh planes!! To the east is the Bridge.”
+
+The scout ship is here. The scout ship is fixed in place. The description is “Agile.”
+
+The transport ship is here. The transport ship is fixed in place. The description is “Heavy, slow mover.”
+
+The attack ship is here. The attack ship is fixed in place. The description is “Bristling with weapons.”
+
+The window is here. The window is fixed in place. The description is  “The thick pressure secure window reveals a breathtaking view of a large gas giant with many moons encircling it. Icy moons, who orbit's lie farther away from the gas giant, spew ice and rock into space through massive geysers, the moons orbiting closer are molten landscapes of churning magma pocketed with massive volcanoes. You look out at the many moons long enough to notice some of them becoming larger, time to go!”
+
+The engine cover is a closed unopenable container in the Hangar. The engine cover is fixed in place. The description is “The attack ship’s large engine cover looks loose, with all those energy weapons this ship must take up a lot of power!”
+
+The fusion reactor core is a thing in the engine cover. “Just what I need!”
+
+[Engineering Bay]
+The Engineering Bay is a room. The description is “[italic type]As you enter the engineering bay escape pods blast off on either side, a wave of people swarm the few remaining escape pods and they begin filling quickly. To the west is the Reactor Room, to the north is the Bridge.[roman type]”
+
+The crowbar is a thing. The crowbar is here. The description is “Good for prying!”
+The escape pod is here. The escape pod is an enterable container. The escape pod is fixed in place. The description is “Come on, you know you wanna escape!”
+
+The eject button is a thing. The eject button is in the escape pod. The description is “Ohh a Big Red Button! Should I pound it?”
+
+The access panel is here. The access panel is fixed in place. The access panel is a container. The description is “You tap the screen on the panel: [line break][line break][bold type]'Access to the Reactor Room is restricted. Please insert keycard with proper clearance to proceed.'[roman type]”
+
+The Reactor Door is west of the Engineering Bay and east of the Reactor Room. The Reactor Door is a locked door. “To the west is a thick iron door leading to the ship's reactor. A sign on it reads [bold type]DANGER: TOXIC FUMES[roman type] Looks like it's hooked up to the access panel in the room."
+
+[Reactor Room]
+The Reactor Room is west of the Reactor Door. “[italic type]Quick, before you die![roman type]”
+
+After going from the Engineering Bay to the Reactor Room:
+	now the Reactor door is closed;
+	now the Reactor door is locked;
+	if player is wearing the gas mask:
+		say "[line break][bold type]You make your way into the fog of toxins. Luckily, your gas mask protects you from the fumes.[roman type][line break]";
+	else:
+		say “[line break][italic type]Your watch tech beeps loudly, and displays a message: [bold type]***WARNING: Deadly toxins detected in the bloodstream. 5 minutes of lifeforce remain. Please get to safety immediately.***[roman type][line break]”;
+		now Oxygen is  6;
+	say "[line break][bold type]THUD![roman type][line break]The reactor door violently slams shut behind you. It looks as if its electronics failed, you're trapped. If you can't replace the core quickly, it's all over.[description of the location of the player]";
+		
+The fusion chamber is an open container in the Reactor Room.  The carrying capacity is 1. The fusion chamber is fixed in place. The description is “A fusion chamber houses the ship’s core. Inside the core's fluctuator is spinning wildly out of control - it looks as if it's about to give at any moment.”	
+
+The overheated core is a thing in the fusion chamber. “You can feel the immense energy the core is giving off. Better get this thing out quick.”
