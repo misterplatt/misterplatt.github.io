@@ -78,10 +78,10 @@ BRUSHED.slider = function(){
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
 											{image : 'include/img/slider-images/hypetrain_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/krab_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer</p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/incognitowl_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer</p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/dreamlock_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer</p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/meow_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer</p></div>', thumb : '', url : ''}  											
+											{image : 'include/img/slider-images/krab_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/incognitowl_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/dreamlock_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/meow_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''}  											
 									],
 									
 		// Theme Options			   
