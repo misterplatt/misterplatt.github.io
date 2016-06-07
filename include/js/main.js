@@ -181,6 +181,10 @@ BRUSHED.fancyBox = function(){
 					if($(this.element).parent().find('img').attr('itch') != null){
 						this.title += '<br>' + '<iframe src="https://itch.io/embed/39925?dark=true&amp;linkback=true" width="552" height="167" frameborder="0"></iframe>';
 					}
+                    //Add itch iframe
+					if($(this.element).parent().find('img').attr('itch-shackle') != null){
+						this.title += '<br>' + '<iframe frameborder="0" src="https://itch.io/embed/69972?bg_color=373737&amp;fg_color=ffffff&amp;link_color=990000&amp;border_color=555555" width="552" height="167"></iframe>';
+					}
 				},
 				helpers : {
 					title : { type: 'inside' }
