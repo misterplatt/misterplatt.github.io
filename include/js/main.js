@@ -77,11 +77,11 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'include/img/slider-images/hypetrain_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/krab_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/incognitowl_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/dreamlock_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/meow_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:38px">Game Designer</p></div>', thumb : '', url : ''}  											
+											{image : 'include/img/slider-images/hypetrain_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/krab_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/incognitowl_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/dreamlock_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/meow_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''}  											
 									],
 									
 		// Theme Options			   
@@ -171,6 +171,9 @@ BRUSHED.fancyBox = function(){
 					if($(this.element).parent().find('img').attr('dlink') == "http://haydenplatt.me/core_decisions/core-decisions"){
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Play In Browser</a>';
 					}
+                    if($(this.element).parent().find('img').attr('dlink') == "http://shackle-game.com"){
+						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Visit Website</a>';
+					}
 					else if($(this.element).parent().find('img').attr('dlink') != null){
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Download</a>';
 					}
@@ -238,37 +241,6 @@ BRUSHED.contactForm = function(){
 }
 
 
-/* ==================================================
-   Twitter Feed
-================================================== */
-
-BRUSHED.tweetFeed = function(){
-	
-	var valueTop = -64; // Margin Top Value
-	
-    $("#ticker").tweet({
-          modpath: 'include/js/twitter/',
-          username: "Bluxart", // Change this with YOUR ID
-          page: 1,
-          avatar_size: 0,
-          count: 10,
-		  template: "{text}{time}",
-		  filter: function(t){ return ! /^@\w+/.test(t.tweet_raw_text); },
-          loading_text: "loading ..."
-	}).bind("loaded", function() {
-	  var ul = $(this).find(".tweet_list");
-	  var ticker = function() {
-		setTimeout(function() {
-			ul.find('li:first').animate( {marginTop: valueTop + 'px'}, 500, 'linear', function() {
-				$(this).detach().appendTo(ul).removeAttr('style');
-			});	
-		  ticker();
-		}, 5000);
-	  };
-	  ticker();
-	});
-	
-}
 
 
 /* ==================================================
@@ -276,7 +248,7 @@ BRUSHED.tweetFeed = function(){
 ================================================== */
 
 BRUSHED.menu = function(){
-	$('#menu-nav, #menu-nav-mobile').onePageNav({
+	$('#menu-nav, #menu-nav-mobile, #scroll').onePageNav({
 		currentClass: 'current',
     	changeHash: false,
     	scrollSpeed: 750,
@@ -292,7 +264,7 @@ BRUSHED.menu = function(){
 ================================================== */
 
 BRUSHED.goSection = function(){
-	$('#nextsection').on('click', function(){
+	$('#nextsection, #scroll').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
 		
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
@@ -464,7 +436,6 @@ $(document).ready(function(){
 	BRUSHED.filter();
 	BRUSHED.fancyBox();
 	BRUSHED.contactForm();
-	BRUSHED.tweetFeed();
 	BRUSHED.scrollToTop();
 	BRUSHED.utils();
 	BRUSHED.accordion();
