@@ -2,24 +2,32 @@
 <rss version="2.0">
     <channel>
         <title>The Splatt Show!</title>
-        <link>http://www.purpleplattypus.com</link>
-        <description>One-of-a-kind podcast, in which two game designer dorks examine games both old and new from a design perspective, argue with each other, and laugh a lot!</description>
         <language>en-us</language>
-        <image>
+        <copyright>℗ 2025 Unknown Podcaster Corp</copyright>
+        <link>http://www.purpleplattypus.com/podcasts</link>
+        <itunes:author>Sam Fields and Hayden Platt</itunes:author>
+        <itunes:email>thesplattshow@gmail.com</itunes:email>
+        <itunes:summary>One-of-a-kind podcast in which two game designer dorks examine games both old and new from a design perspective, argue with each other, and laugh a lot!</itunes:summary>
+        <itunes:explicit>Yes</itunes:explicit>
+        <itunes:category text="Games &amp; Hobbies"/>
+        <itunes:image>
             <title>The Splatt Show!</title>
             <link>http://www.purpleplattypus.com</link>
-            <url>http://imgur.com/a/uE5o1</url>
-            <width>150</width>
-            <height>150</height>
-        </image>
+            <url>http://purpleplattypus.com/podcasts/splatt_prof.png</url>
+            <width>1600</width>
+            <height>1600</height>
+        </itunes:image>
         <item>
             <title>The Splatt Show! Epsisode 1 - Shovel Knight; Capturing the "Retro" Aesthetic</title>
-            <pubDate>Wed 14 Sep 2016 17:00</pubDate>
             <link>http://purpleplattypus.com/podcasts/</link>
-            <description><![CDATA[Welcome to The Splatt Show!]]></description>
-            <author>thesplattshow@gmail.com</author>
+            <itunes:summary>The premiere episode of Sam and Hayden's new podcast! Join us as we discuss our takeaways from Yacht Club Games' Shovel Knight, the Pokemon Go Plus, and discuss some old rental gems!</itunes:summary>
+            <itunes:order>1</itunes:order>
+            <itunes:explicit>Yes</itunes:explicit>
+            <itunes:author>thesplattshow@gmail.com</itunes:author>
             <category>video games</category>
-            <enclosure url="http://purpleplattypus.com/podcasts/episode1.mp3" length="71770844" type="audio/mpeg" />
+            <enclosure url="http://purpleplattypus.com/podcasts/episode1.mp3" length="71770844" type="audio/x-mp3" />
+            <guid>http://purpleplattypus.com/podcasts/episode1.mp3</guid>
+            <pubDate>Wednesday, 14 Sep 2016 17:00</pubDate>
         </item>
     </channel>
 </rss>
