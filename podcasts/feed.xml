@@ -10,13 +10,7 @@
         <itunes:summary>One-of-a-kind podcast in which two game designer dorks examine games both old and new from a design perspective, argue with each other, and laugh a lot!</itunes:summary>
         <itunes:explicit>Yes</itunes:explicit>
         <itunes:category text="Games &amp; Hobbies"/>
-        <itunes:image>
-            <title>The Splatt Show!</title>
-            <link>http://www.purpleplattypus.com</link>
-            <url>http://purpleplattypus.com/podcasts/splatt_prof.png</url>
-            <width>1600</width>
-            <height>1600</height>
-        </itunes:image>
+        <itunes:image>http://purpleplattypus.com/podcasts/splatt_prof.png</itunes:image>
         <item>
             <title>The Splatt Show! Epsisode 1 - Shovel Knight; Capturing the "Retro" Aesthetic</title>
             <link>http://purpleplattypus.com/podcasts/</link>
