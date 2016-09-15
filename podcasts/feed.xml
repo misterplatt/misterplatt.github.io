@@ -13,6 +13,7 @@
         <itunes:explicit>Yes</itunes:explicit>
         <itunes:category text="Games &amp; Hobbies"/>
         <itunes:image>http://purpleplattypus.com/podcasts/splatt_prof.jpg</itunes:image>
+        <googleplay:image>http://purpleplattypus.com/podcasts/splatt_prof.jpg</googleplay:image>
         <item>
             <title>The Splatt Show! Epsisode 1 - Shovel Knight; Capturing the "Retro" Aesthetic</title>
             <link>http://purpleplattypus.com/podcasts/</link>
