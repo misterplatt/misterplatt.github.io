@@ -3,7 +3,7 @@
     <channel>
         <title>The Splatt Show!</title>
         <language>en-us</language>
-        <copyright>℗ 2025 Unknown Podcaster Corp</copyright>
+        <copyright>℗ 2016 Splatt Specifications</copyright>
         <link>http://www.purpleplattypus.com/podcasts</link>
         <googleplay:author>Sam Fields and Hayden Platt</googleplay:author>
         <googleplay:email>thesplattshow@gmail.com</googleplay:email>
@@ -12,7 +12,7 @@
         <itunes:summary>One-of-a-kind podcast in which two game designer dorks examine games both old and new from a design perspective, argue with each other, and laugh a lot!</itunes:summary>
         <itunes:explicit>Yes</itunes:explicit>
         <googleplay:category text="Games &amp; Hobbies"/>
-        <itunes:category text="Video Games"/>
+        <itunes:category text="Games &amp; Hobbies"/>
         <itunes:image href="http://purpleplattypus.com/podcasts/splatt_prof.jpg" />
         <googleplay:image href="http://purpleplattypus.com/podcasts/splatt_prof.jpg" />
         <item>
