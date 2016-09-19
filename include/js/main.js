@@ -77,11 +77,12 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'include/img/slider-images/hypetrain_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/krab_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/incognitowl_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/dreamlock_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/meow_screen.png', title : '<div class="slide-content">Hayden Platt<p style="margin-top:-180px; font-size:45px">Game Designer<br><a href="#work" class="btn btn-circle"><i class="fa fa-angle-double-down animated"></i></a></p></div>', thumb : '', url : ''}  											
+                                            {image : 'include/img/slider-images/shackle_screen.png', title : '<div class="slide-content"><img src="include/img/slider_cover.png" class="img-slider-profile"></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/hypetrain_screen.png', title : '<div class="slide-content"><img src="include/img/slider_cover.png" class="img-slider-profile"></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/krab_screen.png', title : '<div class="slide-content"><img src="include/img/slider_cover.png" class="img-slider-profile"></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/incognitowl_screen.png', title : '<div class="slide-content"><img src="include/img/slider_cover.png" class="img-slider-profile"></div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/dreamlock_screen.png', title : '<div class="slide-content"><img src="include/img/slider_cover.png" class="img-slider-profile"></div>', thumb : 'include/img/platt.png', url : ''},
+											{image : 'include/img/slider-images/meow_screen.png', title : '<div class="slide-content"><img src="include/img/slider_cover.png" class="img-slider-profile"></div>', thumb : '', url : ''}  											
 									],
 									
 		// Theme Options			   
@@ -170,9 +171,6 @@ BRUSHED.fancyBox = function(){
 					// Add download button
 					if($(this.element).parent().find('img').attr('dlink') == "http://haydenplatt.me/core_decisions/core-decisions"){
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Play In Browser</a>';
-					}
-                    if($(this.element).parent().find('img').attr('dlink') == "http://shackle-game.com"){
-						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Visit Website</a>';
 					}
 					else if($(this.element).parent().find('img').attr('dlink') != null){
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Download</a>';
@@ -268,7 +266,7 @@ BRUSHED.menu = function(){
 ================================================== */
 
 BRUSHED.goSection = function(){
-	$('#nextsection, #scroll').on('click', function(){
+	$('#nextsection, #scroll, .double-arrow').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
 		
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
@@ -445,6 +443,18 @@ $(document).ready(function(){
 	BRUSHED.accordion();
 	BRUSHED.toggle();
 	BRUSHED.toolTip();
+    
+    BRUSHED.dub();
+    
+    /* Location Button redirect handling */
+    $(".double-arrow").click(function(e){
+      e.preventDefault();
+      console.log("BUTTS");
+      $target = $($(this).attr('href')).offset().top-30;
+		
+      $('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo'); 
+    });
+
 });
 
 $(window).resize(function(){

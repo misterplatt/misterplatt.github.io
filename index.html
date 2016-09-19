@@ -90,25 +90,6 @@
 </section>
 </div>
 <!-- End of Splash Screen -->
-
-<!-- Homepage Slider -->
-<div id="home-slider">	
-    <div class="overlay"></div>
-
-    <div class="slider-text">
-    	<div id="slidecaption"></div>
-    </div>   
-	
-	<div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-        
-        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
-    </div>
-</div>
-<!-- End Homepage Slider -->
-
 <!-- Header -->
 <header>
     <div class="sticky-nav">
@@ -129,7 +110,26 @@
         
     </div>
 </header>
-<!-- End Header -->
+<!-- Homepage Slider -->
+<div id="home-slider">	
+    <div class="overlay"></div>
+
+    <div class="slider-text">
+    	<div id="slidecaption"></div>
+    </div>   
+	
+    <div class="overlay-button text-center"><a href="#work" class="btn btn-circle double-arrow" style="z-index: -20;"><i class="fa fa-angle-double-down animated"></i></a></div>
+    
+	<div class="control-nav">
+        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+        <ul id="slide-list"></ul>
+        
+        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+    </div>
+</div>
+<!-- End Homepage Slider -->
+
 
 <!-- Our Work Section -->
 <div id="work" class="page">
@@ -167,11 +167,10 @@
             	<div class="row">
                 	<section id="projects">
                     	<ul id="thumbs">
-                            
                             <!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 lead level programmer">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Shackle" href="include/img/work/full/image-06-full.jpg">
+                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Shackle" href="https://www.youtube.com/watch?v=IBZkpbOhKig">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -317,23 +316,20 @@
         <!-- Start Profile -->
     	<div class="span4 profile">
         	<div class="image-wrap">
-                <img src="include/img/about/me_small.png">
+                <img src="include/img/about/splatt_prof.png">
             </div>
-            <h3 class="profile-name">A Student</h3>
+            <h3 class="profile-name">A Podcaster</h3>
             <p class="profile-description">While true that I'm a student at UC Santa Cruz, that's not the only place I do my learning. When I play games, I'm learning. When I lead projects, I'm learning. 
 			I've come to realize that I'll never know everything about games, but that's also what makes creating them so great. My title may change, but I'll always be a student with more to learn.</p>
         </div>
         <!-- End Profile -->
-		
-		<!-- Resume Link -->
-		<div class="span4" style="text-align:center">
-            <a class="button" href="include/downloads/Hayden_Platt_Resume.pdf" target="_blank">View Resume</a>
-        </div>
-        
+ 
     </div>
-        
+    
+    <!-- Resume Link -->
+	<div style="text-align:center">
+        <a class="button" href="include/downloads/Hayden_Platt_Resume.pdf" target="_blank"><i class="font-icon-file"></i>&nbsp;&nbsp;View Resume</a>
     </div>
-    <!-- End People -->
 </div>
 </div>
 <!-- End About Section -->
@@ -347,7 +343,7 @@
         <div class="span12">
             <div class="title-page">
                 <h2 class="title">Get in Touch</h2>
-                <h3 class="title-description">Set to graduate in June 2016, I'm always looking for new opportunities.</h3>
+                <h3 class="title-description">I'm always looking for new opportunities!</h3>
             </div>
         </div>
     </div>
@@ -368,7 +364,7 @@
                 	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
                 </p>
                 <p class="contact-submit">
-                	<a id="contact-submit" class="submit" href="mailto:misterplatt17@gmail.com">SEND YOUR EMAIL</a>
+                	<a id="contact-submit" class="submit" href="mailto:misterplatt17@gmail.com"><i class="font-icon-email"></i>&nbsp;&nbsp;SEND YOUR EMAIL</a>
                 </p>
                 
                 <div id="response">
