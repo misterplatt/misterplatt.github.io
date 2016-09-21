@@ -9,7 +9,7 @@
   	-webkit-border-radius: 0;
        -moz-border-radius: 0;
             border-radius: 0;
-  	background-color: #3C3F45;
+  	background-color: #673AB7;
   	color: #FFFFFF;
   	vertical-align: middle;
   	text-align: center;
@@ -32,7 +32,7 @@
 .button:hover,
 .button:active,
 .button:focus {
-	background-color: #673AB7;
+	background-color: #3C3F45;
 	color:#FFFFFF;
 }
 

@@ -1030,7 +1030,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form .submit {
-    background: #3C3F45;
+    background: #673AB7;
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
@@ -1049,7 +1049,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form .submit:hover {
-    background: #673AB7;
+    background: #3C3F45;
     color: #FFFFFF;
 }
 
