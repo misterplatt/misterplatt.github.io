@@ -39,5 +39,17 @@
             <guid>http://purpleplattypus.com/podcasts/episode2.mp3</guid>
             <pubDate>Wednesday, 28 Sep 2016 17:00</pubDate>
         </item>
+        <item>
+            <title>The Splatt Show! Episode 3 - IndieCade Special; Journey</title>
+            <link>http://purpleplattypus.com/podcasts/</link>
+            <itunes:summary>Freshly back from IndieCade we cover Sam's experience as an attendee and Hayden's as a nominee representative, before examining Journey's place in  the world of artistic / experiential games.</itunes:summary>
+            <itunes:order>3</itunes:order>
+            <itunes:explicit>Yes</itunes:explicit>
+            <itunes:author>thesplattshow@gmail.com</itunes:author>
+            <category>video games</category>
+            <enclosure url="http://purpleplattypus.com/podcasts/episode3.mp3" length="72530000" type="audio/x-mp3" />
+            <guid>http://purpleplattypus.com/podcasts/episode3.mp3</guid>
+            <pubDate>Wednesday, 19 Oct 2016 17:00</pubDate>
+        </item>
     </channel>
 </rss>
