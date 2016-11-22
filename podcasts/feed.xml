@@ -23,8 +23,8 @@
             <itunes:explicit>Yes</itunes:explicit>
             <itunes:author>thesplattshow@gmail.com</itunes:author>
             <category>video games</category>
-            <enclosure url="http://purpleplattypus.com/podcasts/episode1.mp3" length="71770844" type="audio/x-mp3" />
-            <guid>http://purpleplattypus.com/podcasts/episode1.mp3</guid>
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode1.mp3" length="71770844" type="audio/x-mp3" />
+            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode1.mp3</guid>
             <pubDate>Wednesday, 14 Sep 2016 17:00</pubDate>
         </item>
         <item>
@@ -35,8 +35,8 @@
             <itunes:explicit>Yes</itunes:explicit>
             <itunes:author>thesplattshow@gmail.com</itunes:author>
             <category>video games</category>
-            <enclosure url="http://purpleplattypus.com/podcasts/episode2.mp3" length="50920000" type="audio/x-mp3" />
-            <guid>http://purpleplattypus.com/podcasts/episode2.mp3</guid>
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode2.mp3" length="50920000" type="audio/x-mp3" />
+            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode2.mp3</guid>
             <pubDate>Wednesday, 28 Sep 2016 17:00</pubDate>
         </item>
         <item>
@@ -47,9 +47,33 @@
             <itunes:explicit>Yes</itunes:explicit>
             <itunes:author>thesplattshow@gmail.com</itunes:author>
             <category>video games</category>
-            <enclosure url="http://purpleplattypus.com/podcasts/episode3.mp3" length="72530000" type="audio/x-mp3" />
-            <guid>http://purpleplattypus.com/podcasts/episode3.mp3</guid>
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode3.mp3" length="72530000" type="audio/x-mp3" />
+            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode3.mp3</guid>
             <pubDate>Wednesday, 19 Oct 2016 17:00</pubDate>
+        </item>
+        <item>
+            <title>The Splatt Show! Episode 4 - Day of the Devs Special; Westerado's Open World</title>
+            <link>http://purpleplattypus.com/podcasts/</link>
+            <itunes:summary>Sam and Platt report in with some day-after Day of the Devs coverage and their thoughts on the Nintendo Switch, all before taking a deep dive into Westerado's uniquely small, yet extra-open open world!</itunes:summary>
+            <itunes:order>4</itunes:order>
+            <itunes:explicit>Yes</itunes:explicit>
+            <itunes:author>thesplattshow@gmail.com</itunes:author>
+            <category>video games</category>
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode4.mp3" length="126000000" type="audio/x-mp3" />
+            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode4.mp3</guid>
+            <pubDate>Sunday, 6 Nov 2016 17:00</pubDate>
+        </item>
+        <item>
+            <title>The Splatt Show! Episode 5 - Streamline; Tackling Twitch Integration</title>
+            <link>http://purpleplattypus.com/podcasts/</link>
+            <itunes:summary>Join Sam and Platt in the FIFTH (not 6th) Splatt Show installment! We check out Proletariat's Twitch-viewer integrated game Streamline, discuss the medium's potential, and reminisce on some handheld classics!</itunes:summary>
+            <itunes:order>5</itunes:order>
+            <itunes:explicit>Yes</itunes:explicit>
+            <itunes:author>thesplattshow@gmail.com</itunes:author>
+            <category>video games</category>
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode5.mp3" length="126000000" type="audio/x-mp3" />
+            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode5.mp3</guid>
+            <pubDate>Sunday, 20 Nov 2016 17:00</pubDate>
         </item>
     </channel>
 </rss>
