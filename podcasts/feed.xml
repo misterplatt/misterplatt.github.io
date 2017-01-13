@@ -75,5 +75,17 @@
             <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode5.mp3</guid>
             <pubDate>Sunday, 20 Nov 2016 17:00</pubDate>
         </item>
+		<item>
+            <title>The Splatt Show! Episode 6 - Gone Home; The Power of Environmental Storytelling</title>
+            <link>http://purpleplattypus.com/podcasts/</link>
+            <itunes:summary>Sam 'n' Platt kick off the new year with a look at Gone Home, what makes environmental storytelling so dang cool, SteamSpy stats, and a hearty discussion about Glover speedrunning!</itunes:summary>
+            <itunes:order>6</itunes:order>
+            <itunes:explicit>Yes</itunes:explicit>
+            <itunes:author>thesplattshow@gmail.com</itunes:author>
+            <category>video games</category>
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode6.mp3" length="65900000" type="audio/x-mp3" />
+            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode6.mp3</guid>
+            <pubDate>Sunday, 8 Jan 2017 17:00</pubDate>
+        </item>
     </channel>
 </rss>
