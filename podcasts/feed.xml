@@ -71,7 +71,7 @@
             <itunes:explicit>Yes</itunes:explicit>
             <itunes:author>thesplattshow@gmail.com</itunes:author>
             <category>video games</category>
-            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode5.mp3" length="126000000" type="audio/x-mp3" />
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode5.mp3" length="67300000" type="audio/x-mp3" />
             <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode5.mp3</guid>
             <pubDate>Sunday, 20 Nov 2016 17:00</pubDate>
         </item>
