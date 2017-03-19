@@ -99,5 +99,17 @@
             <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode7.mp3</guid>
             <pubDate>Sunday, 29 Jan 2017 17:00</pubDate>
         </item>
+		<item>
+            <title>The Splatt Show! Episode 8 - Kerbal Space Program; Designing Without Explicit Player Goals</title>
+            <link>http://purpleplattypus.com/podcasts/</link>
+            <itunes:summary>The Splatt duo returns with special guest Samuel Reha, in hearty discussion all about the enigma that is Kerbal Space Program! The gang also shares their thoughts on the Nintendo Switch release, and reflects on the wacky N64 Disk Drive.</itunes:summary>
+            <itunes:order>8</itunes:order>
+            <itunes:explicit>Yes</itunes:explicit>
+            <itunes:author>thesplattshow@gmail.com</itunes:author>
+            <category>video games</category>
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode8.mp3" length="82200000" type="audio/x-mp3" />
+            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode8.mp3</guid>
+            <pubDate>Sunday, 29 Mar 2017 17:00</pubDate>
+        </item>
     </channel>
 </rss>
