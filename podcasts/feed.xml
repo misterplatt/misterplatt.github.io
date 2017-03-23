@@ -107,7 +107,7 @@
             <itunes:explicit>Yes</itunes:explicit>
             <itunes:author>thesplattshow@gmail.com</itunes:author>
             <category>video games</category>
-            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode8.mp3" length="82200000" type="audio/x-mp3" />
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode8.mp3" length="79300000" type="audio/x-mp3" />
             <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode8.mp3</guid>
             <pubDate>Sunday, 29 Mar 2017 17:00</pubDate>
         </item>
