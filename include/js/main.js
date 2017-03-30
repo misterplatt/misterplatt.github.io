@@ -177,7 +177,7 @@ BRUSHED.fancyBox = function(){
 					}
 					//Add itch iframe
 					if($(this.element).parent().find('img').attr('itch') != null){
-						this.title += '<br>' + '<iframe src="https://itch.io/embed/39925?dark=true&amp;linkback=true" width="552" height="167" frameborder="0"></iframe>';
+						this.title += '<br>' + '<iframe frameborder="0" src="https://itch.io/embed/39925?border_width=0&amp;bg_color=2F3238&amp;fg_color=fff&amp;link_color=673AB7&amp;border_color=2F3238" width="550" height="165"></iframe>';
 					}
                     
 				},
@@ -197,12 +197,12 @@ BRUSHED.fancyBox = function(){
 					if($(this.element).parent().find('img').attr('dlink') == "http://purpleplattypus.com/incognitowl_game/browser"){
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Play In Browser</a>';
 					}
+                    //Add itch iframe
+					else if($(this.element).parent().find('img').attr('itch-shackle') != null){
+						this.title += '<br>' + '<iframe frameborder="0" src="https://itch.io/embed/69972?border_width=0&amp;bg_color=2F3238&amp;fg_color=ffffff&amp;link_color=673AB7&amp;border_color=2F3238" width="550" height="165"></iframe>';
+					}
 					else {
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '"><i class="font-icon-download"></i>&nbsp;&nbsp;Download</a>';
-					}
-                    //Add itch iframe
-					if($(this.element).parent().find('img').attr('itch-shackle') != null){
-						this.title += '<br>' + '<iframe frameborder="0" src="https://itch.io/embed/69972?border_width=0&amp;bg_color=2F3238&amp;fg_color=ffffff&amp;border_color=2F3238" width="550" height="165"></iframe>';
 					}
 			},
 			helpers : {
