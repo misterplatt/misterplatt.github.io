@@ -173,16 +173,13 @@ BRUSHED.fancyBox = function(){
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Play In Browser</a>';
 					}
 					else if($(this.element).parent().find('img').attr('dlink') != null){
-						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Download</a>';
+						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '"><i class="font-icon-download"></i>&nbsp;&nbsp;Download</a>';
 					}
 					//Add itch iframe
 					if($(this.element).parent().find('img').attr('itch') != null){
 						this.title += '<br>' + '<iframe src="https://itch.io/embed/39925?dark=true&amp;linkback=true" width="552" height="167" frameborder="0"></iframe>';
 					}
-                    //Add itch iframe
-					if($(this.element).parent().find('img').attr('itch-shackle') != null){
-						this.title += '<br>' + '<iframe frameborder="0" src="https://itch.io/embed/69972?border_width=0&amp;bg_color=2F3238&amp;fg_color=ffffff&amp;border_color=2F3238" width="550" height="165"></iframe>';
-					}
+                    
 				},
 				helpers : {
 					title : { type: 'inside' }
@@ -201,7 +198,11 @@ BRUSHED.fancyBox = function(){
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Play In Browser</a>';
 					}
 					else {
-						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Download</a>';
+						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '"><i class="font-icon-download"></i>&nbsp;&nbsp;Download</a>';
+					}
+                    //Add itch iframe
+					if($(this.element).parent().find('img').attr('itch-shackle') != null){
+						this.title += '<br>' + '<iframe frameborder="0" src="https://itch.io/embed/69972?border_width=0&amp;bg_color=2F3238&amp;fg_color=ffffff&amp;border_color=2F3238" width="550" height="165"></iframe>';
 					}
 			},
 			helpers : {
