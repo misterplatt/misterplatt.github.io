@@ -111,5 +111,17 @@
             <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode8.mp3</guid>
             <pubDate>Sunday, 29 Mar 2017 17:00</pubDate>
         </item>
+		<item>
+            <title>The Splatt Show! Episode 9 - Inside; Creating a Compelling Experience Without Dialogue</title>
+            <link>http://purpleplattypus.com/podcasts/</link>
+            <itunes:summary>Back again in the heat of summer, Sam 'n' Platt jump on the mic to discuss Playdead's highly polished game, Inside! Stick around in the back half to hear our thoughts on some E3 announcements, and the infamous THUNDER KNEE!!</itunes:summary>
+            <itunes:order>9</itunes:order>
+            <itunes:explicit>Yes</itunes:explicit>
+            <itunes:author>thesplattshow@gmail.com</itunes:author>
+            <category>video games</category>
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode9.mp3" length="71800000" type="audio/x-mp3" />
+            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode9.mp3</guid>
+            <pubDate>Sunday, 25 Jun 2017 17:00</pubDate>
+        </item>
     </channel>
 </rss>
