@@ -135,5 +135,17 @@
             <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode10.mp3</guid>
             <pubDate>Sunday, 19 Nov 2017 17:00</pubDate>
         </item>
+		<item>
+            <title>The Splatt Show! Episode 11 - ABZÛ; Balancing Accessibility and Complexity</title>
+            <link>http://purpleplattypus.com/podcasts/</link>
+            <itunes:summary>The Splatt squad adventures underwater to dissect ABZÛ and the tradeoffs of reaching a broader audience. With choice new overlays, the two also discuss the Game Awards and a particularly puzzling random word?</itunes:summary>
+            <itunes:order>11</itunes:order>
+            <itunes:explicit>Yes</itunes:explicit>
+            <itunes:author>thesplattshow@gmail.com</itunes:author>
+            <category>video games</category>
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode11.mp3" length="52900000" type="audio/x-mp3" />
+            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode11.mp3</guid>
+            <pubDate>Sunday, 10 Dec 2017 17:00</pubDate>
+        </item>
     </channel>
 </rss>
