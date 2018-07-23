@@ -159,5 +159,17 @@
             <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode12.mp3</guid>
             <pubDate>Sunday, 10 Dec 2017 17:00</pubDate>
         </item>
+    <item>
+            <title>The Splatt Show! Episode 13 - Wizard of Legend; Limiting Information</title>
+            <link>http://purpleplattypus.com/podcasts/</link>
+            <itunes:summary>The boys are back with a fresh track! They tackle Wizard of Legend, the action-packed new roguelike that makes the player feel like Naruto, despite some drawbacks like a troubling lack of item descriptions. Will Sam and Platt conquer the Chaos Trials, or buster out?? Find out next time, on Naruto!</itunes:summary>
+            <itunes:order>13</itunes:order>
+            <itunes:explicit>Yes</itunes:explicit>
+            <itunes:author>thesplattshow@gmail.com</itunes:author>
+            <category>video games</category>
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode12.mp3" length="63500000" type="audio/x-mp3" />
+            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode12.mp3</guid>
+            <pubDate>Sunday, 22 Jul 2018 17:00</pubDate>
+        </item>
     </channel>
 </rss>
