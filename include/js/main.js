@@ -172,6 +172,9 @@ BRUSHED.fancyBox = function(){
 					if($(this.element).parent().find('img').attr('dlink') == "http://purpleplattypus.com/core_decisions/core-decisions"){
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Play In Browser</a>';
 					}
+					else if($(this.element).parent().find('img').attr('dlink') == "https://www.oculus.com/experiences/rift/1298930313503250/"){
+						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">View In Store</a>';
+					}
 					else if($(this.element).parent().find('img').attr('dlink') != null){
 						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '"><i class="font-icon-download"></i>&nbsp;&nbsp;Download</a>';
 					}
