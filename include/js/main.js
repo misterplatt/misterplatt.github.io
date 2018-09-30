@@ -170,13 +170,10 @@ BRUSHED.fancyBox = function(){
 					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
 					// Add download button
 					if($(this.element).parent().find('img').attr('dlink') == "http://purpleplattypus.com/core_decisions/core-decisions"){
-						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Play In Browser</a>';
-					}
-					else if($(this.element).parent().find('img').attr('dlink') == "https://www.oculus.com/experiences/rift/1298930313503250/"){
-						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">View In Store</a>';
+						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" target="_blank" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Play In Browser</a>';
 					}
 					else if($(this.element).parent().find('img').attr('dlink') != null){
-						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '"><i class="font-icon-download"></i>&nbsp;&nbsp;Download</a>';
+						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" target="_blank" class="button""' + $(this.element).parent().find('img').attr('dlink') + '"><i class="font-icon-download"></i>&nbsp;&nbsp;Download</a>';
 					}
 					//Add itch iframe
 					if($(this.element).parent().find('img').attr('itch') != null){
@@ -198,14 +195,18 @@ BRUSHED.fancyBox = function(){
 					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
 					// Add download button
 					if($(this.element).parent().find('img').attr('dlink') == "http://purpleplattypus.com/incognitowl_game/browser"){
-						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Play In Browser</a>';
+						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" target="_blank" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">Play In Browser</a>';
+					}
+					// Add "View in Store" button
+					else if($(this.element).parent().find('img').attr('dlink') == "https://www.oculus.com/experiences/rift/1298930313503250/"){
+						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" target="_blank" class="button""' + $(this.element).parent().find('img').attr('dlink') + '">View In Store</a>';
 					}
                     //Add itch iframe
 					else if($(this.element).parent().find('img').attr('itch-shackle') != null){
 						this.title += '<br>' + '<iframe frameborder="0" src="https://itch.io/embed/69972?border_width=0&amp;bg_color=2F3238&amp;fg_color=ffffff&amp;link_color=673AB7&amp;border_color=2F3238" width="550" height="165"></iframe>';
 					}
 					else {
-						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" class="button""' + $(this.element).parent().find('img').attr('dlink') + '"><i class="font-icon-download"></i>&nbsp;&nbsp;Download</a>';
+						this.title += '<br>' + '<a href="' + $(this.element).parent().find('img').attr('dlink') + '" target="_blank" class="button""' + $(this.element).parent().find('img').attr('dlink') + '"><i class="font-icon-download"></i>&nbsp;&nbsp;Download</a>';
 					}
 			},
 			helpers : {
