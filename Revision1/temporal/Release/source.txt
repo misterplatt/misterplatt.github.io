@@ -1,0 +1,186 @@
+"Temporal" by Hayden Platt
+
+[Establish Map]
+The Castle Keep is a room. "You find yourself in the keep at the very top of a castle, drenched in darkness. The glimmer of moon provides just enough light for you to take a look around."
+
+The temporal rift is south of the Castle Keep and north of the Convenience Store. The temporal rift is an open door. “A strange rift floats on the [if player is in the Castle Keep]south[else]north[end if] end of the room, crackling and rippling.”
+
+The description of the temporal rift is "The strange tear is like nothing you've ever seen before. It might go somewhere , but do you really want to find out?"
+
+The Convenience Store is south of the temporal rift. The Convenience Store is a room. "The rift spits you out, dropping into what appears to be a convenience store. Judging by the lack of employees and customers, you gather they're likely closed. Only the flourescents from the drink walls light the store."
+
+The arch window is west of the Castle Keep. The arch window is an open door. "An arch-shaped window to the west peers out from the tower."
+
+The description of the arch window is "Upon closer inspection, you spot the end of a braid of hair, caught up in an iron bar jutting out from below the window. As your eyes follow the braid down, they become lost in the darkness... Better not fall."
+
+The Falling is a room. The Falling is west of the arch window. 
+
+[Convenience Store Objects]
+A burrito is in the Convenience Store. The burrito is either flaming or frozen. The description is “A[if frozen]n ice cold[else] scorching hot[end if], dense bean brick. Could be useful if you needed to smash something? Ha.”
+
+An energy drink is in the Convenience Store. The description is “Uncle Iro’s Jumpstarter Fluid: 62 times the caffeine found in coffee! ...Yuck.”
+
+The microwave is fixed in place in the Convenience Store. The microwave is either juiced or broken. It is an open transparent container. “There is a rusty microwave behind the empty counter.”
+
+The description of the microwave is “Thoroughly banged up, the piece of shit barely displays an incorrect time, as the light inside flickers. Looks like the thing isn’t getting enough juice. Oh, and why there's a funnel sticking out of this behemoth is beyond you.”
+
+The bucket is an object. The knight's helmet is wearable. The description is "Sitting atop your head in place of the valiant helmet is a yellow bucket, quite the contrary..."
+
+[Castle Keep Objects]
+A steel chest is a closed unopenable container in the Castle Keep. A knight’s helmet is in the steel chest. The knight's helmet is wearable.
+
+The description of the steel chest is "An impenetrable-looking steel chest sits in the corner farthest from the window. Your mind begins to wonder as you imagine what could be inside..."
+
+The end of a hair braid is in the Castle Keep. [It is fixed in place.]
+
+The sword is an object. The sword is either molten or normal. The description is "[if normal]You seriously have no recollection of picking this up. What happened to the burrito??[else]The blade of the mysterious sword you've stumbled upon is scorching hot, dangerous to the touch. You keep your hands safely gripped below the hilt. You really don't remember obtaining such a thing..."
+
+[Microwaving Action]
+Microwaving is an action applying to one visible thing.
+
+Understand "microwave [something]" as microwaving.
+Understand the commands "cook" and "heat" as "microwave".
+
+Before inserting something into the microwave:
+	if noun is energy drink:
+		say "Metal plus a microwave is never a good idea, I'd better not.";
+		stop the action;
+	if noun is bucket:
+		say "Despite your best efforts to shove a bucket in a microwave, you're unable to fit it.";
+		stop the action;
+
+After inserting something into the microwave:
+	say "You toss the bean hunk in the sad excuse for an appliance."
+	
+Check microwaving:
+	if noun is not in the microwave:
+		say "If I wanna cook this, putting it in the microwave would probably be a good first step.";
+		stop the action;
+
+Carry out microwaving something:
+	if microwave is not juiced:
+		say "You pick a time and press cook, but no dice. Seems like the damn thing doesn't have enough energy.";
+		stop the action;
+	say "Cooking...";
+	now the microwave is closed
+	
+Every turn when microwaving something:
+	now microwave is open;
+	if the noun is the burrito:
+		now the burrito is flaming;
+	if the noun is in the microwave and microwave is juiced:
+		say "Done! The once-artic culinary disgrace is now considered edible by some."
+
+[Pouring action]		
+Pouring is an action applying to one visible thing.
+
+Understand "pour [something] into microwave" as pouring.
+Understand "pour [something] into funnel" as pouring.
+Understand "pour [something] in microwave" as pouring.
+Understand "pour [something] in funnel" as pouring.
+Understand the commands "drain" and "empty" as "pour".
+
+Check pouring:
+	if the noun is not the energy drink:
+		say "I don't think that'll work.";
+		stop the action;
+	
+Carry out pouring something:
+	say "You lean back as you pour the toxic-looking energy cocktail into the microwave...";
+	say " ";
+	say "The machine starts to rumble and gargle as it stomachs your interesting decision. Lucky for you, the digits on the clock burst into brightness as the contraption springs back to life.";
+	now the microwave is juiced;
+	now the energy drink is nowhere;
+
+[Pulling action]		
+[Pulling is an action applying to one visible thing.]
+
+Understand "pull [something]" as pulling.
+Understand "pull on [something]" as pulling.
+[Understand the commands "yank" and "empty" as "pull".]
+
+Check pulling:
+	if the noun is not the end of a hair braid:
+		say "I don't think that'll work.";
+		stop the action;
+	if player is not wearing the knight's helmet:
+		say "You pull with all your might, to no avail. I wonder what (or who) is at the end of it?";
+		stop the action;
+	
+Carry out pulling something:
+	say "You lean back and pull with all your might";
+	say " ";
+	end the story saying “You embrace your inner strength, and pull the braid all the way up. At the other end of the braid is a frustrated, but friendly monkey. The two of you head back to convenience store together for some Flamin' Hot Cheetos :)”
+
+
+[Hitting action] [FIXXXXXX THISSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+Cutting is an action applying to one visible thing.
+
+Understand "hit [something]" as cutting.
+Understand "hit [something] with sword" as cutting.
+Understand "slice [something]" as cutting.
+Understand "slash [something] with sword" as cutting.]
+
+Instead of cutting the braid:
+	if player does not have the sword:
+		say "I'm not sure anything you have could achieve that.";
+		stop the action;
+	otherwise:
+		end the story saying “You slice the braid free, and then hear a scream followed by a splat...”
+
+Instead of cutting the chest:
+	if player does not have the sword:
+		say "Nothing you have could even leave a dent on this thing.";
+		stop the action;
+	if the sword is normal:
+		say "You assume a powerful stance and give it your best swing, but the sword still clangs off the crate, sending harsh vibrations through your hands.";
+	if the sword is molten:
+		say "You take a deep breath, assume the stance of a true warrior, and let out a roar as you swing.";
+		say " ";
+		say "GRAAAAAAAAAHHHHHHHHHHHHHHHHH!!";
+		say " ";
+		say "The red hot sword slices through the crate like butter, revealing an item of unparalelled beauty.";
+		now steel chest is open;
+		
+				
+[Transformation checks]
+After going to the Castle Keep when the player has the burrito:
+	say "What the?! As you pass through the rift, your pockets feel twice as heavy all of the sudden!";
+	now the player has the sword;
+	if the burrito is flaming:
+		now the sword is molten;
+	now the burrito is nowhere;
+	if player is wearing the bucket:
+		now the bucket is nowhere;
+		now the player has the knight's helmet;
+		now the player wears the knight's helmet;
+	otherwise:
+		now the bucket is nowhere;
+		now the player has the knight's helmet;
+	
+After going to the Convenience Store when the player has the sword:
+	say "You feel your load lighten once more as you warp through the rift.";
+	now the player has the burrito;
+	if the sword is molten:
+		now the burrito is flaming;
+	now the sword is nowhere;
+	if player is wearing the knight's helmet:
+		now the knight's helmet is nowhere;
+		now the player has the bucket;
+		now the player wears the bucket;
+	otherwise:
+		now the knight's helmet is nowhere;
+		now the player has the bucket;
+
+After wearing the knight's helmet:
+	say "The epic helmet slides perfectly over your luscious mane, empowering you with the strength of a thousand humans.";
+	
+After going to the Falling:
+	end the story saying “AGGHHHHHHHHHHHHHHH!!!! Why in the hell did you think that was a good idea? As you plummet down toward the sharp rocks below, you pass a screaming figure, hanging from the braid of hair...”
+
+Release along with the source text, an interpreter, and a website.
+
+
+
+
+
