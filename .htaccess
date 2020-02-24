@@ -1,5 +1,12 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-AddHandler application/x-httpd-php5 .php
+#Don't run the rule on folders
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#Check for file in directory with .html extension
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Append .html behind the scenes only
+RewriteRule ^([.*)$ $1.html [NC,L]
+
+# AddHandler application/x-httpd-php5 .php
