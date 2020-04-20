@@ -167,8 +167,8 @@
             <itunes:explicit>Yes</itunes:explicit>
             <itunes:author>thesplattshow@gmail.com</itunes:author>
             <category>video games</category>
-            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode12.mp3" length="63500000" type="audio/x-mp3" />
-            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode12.mp3</guid>
+            <enclosure url="https://s3-us-west-1.amazonaws.com/splatt-show/episode13.mp3" length="54100000" type="audio/x-mp3" />
+            <guid>https://s3-us-west-1.amazonaws.com/splatt-show/episode13.mp3</guid>
             <pubDate>Sunday, 22 Jul 2018 17:00</pubDate>
         </item>
     </channel>
