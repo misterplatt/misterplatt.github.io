@@ -31,7 +31,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 
 /* UNIQUE VOTES + TIME ACTIVE BACKGROUND */
 .custom .metaInfo {
-	background: green;
+	background: rgb(29, 29, 29);
 	overflow: hidden;
 	padding: 0 10px;
 }
@@ -49,7 +49,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 /* UNIQUE VOTES / TIME ACTIVE HIGHLIGHTED TEXT */
 .custom .total strong,
 .custom .duration strong {
-	color: #ffa;
+	color: #673ab7;
 	font-size: 20px;
 	display: block;
 }
@@ -64,7 +64,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 /* WINNING OPTION HIGHLIGHT */
 .custom.finished .options li.highest,
 .custom.removing .options li.highest {
-	color: #ffa;
+	color: #673ab7;
 	opacity: 1;
 }
 
@@ -99,7 +99,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 .custom .options li.question {
 	padding: 10px 20px;
 	white-space: normal;
-	background: blue;
+	background: rgb(29, 29, 29);
 	clear: both;
 	line-height: 1.3;
 	font-size: 20px;
@@ -108,7 +108,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 
 /* HELP TEXT BACKGROUND */
 .custom .options li.help {
-	background: brown;
+	background: rgb(29, 29, 29);
 	text-align: center;
 	overflow: hidden;
 	height: 0;
@@ -141,7 +141,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 
 /* FILLED PROGRESS BAR COLOR */
 .custom .options li .bar .bar-inner {
-	background: #fff;
+	background: #673ab7;
 	height: 100%;
 	width: 0;
 	transition: width 1s;
