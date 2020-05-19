@@ -6,7 +6,6 @@ On your https://poll.ma.pe/overlay/<id>/ URL add ?customCss=https://example.com/
 Please keep the link to https://poll.ma.pe visible for a short period of time.
 */
 
-@import url(https://fonts.googleapis.com/css?family=Abel);
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
 
@@ -14,11 +13,11 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 * "custom" refers to the theme assigned to the poll element
 */
 .custom {
-	background: rgb(174, 0, 255);
+	background: rgb(29, 29, 29);
 	width: 400px;
 	transition: opacity 1s;
 	padding: 10px;
-
+    /* FONT */
 	font-family: Righteous;
 
 	/* Hide when not active */
@@ -30,11 +29,14 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	opacity: 1;
 }
 
+/* UNIQUE VOTES + TIME ACTIVE BACKGROUND */
 .custom .metaInfo {
 	background: green;
 	overflow: hidden;
 	padding: 0 10px;
 }
+
+/* UNIQUE VOTES / TIME ACTIVE INVIDUAL BACKGROUNDS */
 .custom .total, .custom .duration {
 	background: #444;
 	float: left;
@@ -44,6 +46,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	margin: 10px 0;
 	line-height: 1.3;
 }
+/* UNIQUE VOTES / TIME ACTIVE HIGHLIGHTED TEXT */
 .custom .total strong,
 .custom .duration strong {
 	color: #ffa;
@@ -58,6 +61,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	opacity: 0.3;
 	transition: all 1s;
 }
+/* WINNING OPTION HIGHLIGHT */
 .custom.finished .options li.highest,
 .custom.removing .options li.highest {
 	color: #ffa;
@@ -72,9 +76,13 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 .custom.removing .metaInfo {
 	opacity: 0.3;
 }
+
+/* HEIGHT OF THE OPTIONS REGION WHILE ACTIVE? */
 .custom.active .options li.help {
 	height: 35px;
 }
+
+/* ACTIVE OPTIONS TEXT / BACKGROUND */
 .custom .options li {
 	position: relative;
 	border: 1px;
@@ -86,6 +94,8 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	padding-left: 55px;
 	font-size: 15px;
 }
+
+/* POLL QUESTION TEXT / BACKGROUND */
 .custom .options li.question {
 	padding: 10px 20px;
 	white-space: normal;
@@ -95,6 +105,8 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	font-size: 20px;
 	position: relative;
 }
+
+/* HELP TEXT BACKGROUND */
 .custom .options li.help {
 	background: brown;
 	text-align: center;
@@ -110,6 +122,8 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	top: 10px;
 	right: 15px;
 }
+
+/* AREA BEHIND NUMBER OPTIONS */
 .custom .options li .number {
 	padding: 5px 10px;
 	background: #333;
@@ -117,11 +131,15 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	top: 5px;
 	left: 10px;
 }
+
+/* UNFILLED PROGRESS BAR COLOR */
 .custom .options li .bar {
 	background: #444;
 	height: 5px;
 	margin-top: 5px;
 }
+
+/* FILLED PROGRESS BAR COLOR */
 .custom .options li .bar .bar-inner {
 	background: #fff;
 	height: 100%;
@@ -133,11 +151,9 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	line-height: 1.3;
 }
 
-/*
-* Optional outer border
-*/
+/* OPTIONAL OUTER BORDER */
 .custom .border {
-	border: 5px solid red;
+	border: 5px solid #673ab7;
 }
 
 
