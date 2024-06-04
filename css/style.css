@@ -477,7 +477,7 @@ button:focus {
 }
 
 .banner-area .slide_bg1 {
-  background: url(../img/carousel/wrath_screen.png);
+  background: url(../img/carousel/wrath2_screen.png);
 }
 
 .banner-area .slide_bg2 {
@@ -643,6 +643,11 @@ button:focus {
 .banner_area #wrath {
   background-image: url(../img/works/wrath-banner.jpg);
 }
+
+.banner_area #wrath2 {
+  background-image: url(../img/works/wrath2-banner.jpg);
+}
+
 
 .banner_area #marvel {
   background-image: url(../img/works/marvel-banner.png);
