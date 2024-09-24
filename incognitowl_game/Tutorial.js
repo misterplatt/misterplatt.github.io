@@ -15,10 +15,10 @@ function start() {
 	
 	var posttxt = false;
 	
-	if(getCookie("continue") == 0){
+	/* if(getCookie("continue") == 0){
 			//console.log("to");
 			posttxt = true;
-	}
+	} */
 
 	clearColor = [0, .5, .5, .5];
 	var can = document.getElementById('canvas');
